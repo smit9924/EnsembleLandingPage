@@ -1,0 +1,95 @@
+section header{
+    height: 100vh;
+    background-image: url("../img/HeaderBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navLogo    {
+    max-width: 60%;
+    height: auto;
+}
+
+.navButton{
+    border-radius: 999px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navLinkButton{
+    border-radius: 999px;
+}
+
+.rightElementContaienr{
+    margin-left: auto;
+}
+
+.mr-10px{
+    margin-right: 10x;
+}
+
+.navLinkFont{
+    color: white!important;
+    font-family: 'Noto Sans';
+    text-decoration: none;
+}
+.navHamburger{
+    font-size: 2rem;
+}
+
+.toggleFont{
+    color: white!important;
+    font-family: 'Noto Sans';
+    text-decoration: none;
+}
+@media (max-width: 350px){
+    .xxs-none{
+        display: none;
+    }
+    .xxs-block{
+        display: block!important;
+    }
+}
+@media (max-width:230px){
+    .xxxs-none{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) { 
+    .navLinkBg{
+        background-color: white;
+    }
+    .navLinkFont{
+        color: black!important;
+        font-family: 'Noto Sans';
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 576){
+    .toggleFont{
+        color: black!important;
+        font-family: 'Noto Sans';
+        text-decoration: none;
+    }
+}
+/* Media querysection according to bootstrap break points */
+/*
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*/

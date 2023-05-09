@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Block to set title of the page-->
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+
+    <!--Bootstrap CSS file links-->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!--Fontawesome CSS file links-->
+    <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.min.css' %}">
+
+    <!--Google fonts api-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+
+    <!--Block to add Internal css as well as css file links-->
+    {% block css %}{% endblock css %}
+</head>
+<body>
+
+    <!--Block to add content in BODY tag-->
+    {% block body %}{% endblock body %}
+    
+
+    <!--Bootstrap JS file links-->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!--Fontawesome JS file links-->
+    <script src="{% static 'vendor/fontawesome/js/all.min.js' %}"></script>
+
+    <!--Block to add internal JS as well as javascript file links-->
+    {% block js %}{% endblock js %}
+</body>
+</html>
