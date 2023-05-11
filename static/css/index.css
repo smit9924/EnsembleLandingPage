@@ -1,77 +1,119 @@
-section header{
+section header {
     height: 100vh;
     background-image: url("../img/HeaderBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.navLogo    {
+.navLogo {
     max-width: 60%;
     height: auto;
 }
 
-.navButton{
+.navButton {
     border-radius: 999px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.navLinkButton{
+
+.navLinkButton {
     border-radius: 999px;
 }
 
-.rightElementContaienr{
+.rightElementContaienr {
     margin-left: auto;
 }
 
-.mr-10px{
+.mr-10px {
     margin-right: 10x;
 }
 
-.navLinkFont{
-    color: white!important;
+.navLinkFont {
+    color: white !important;
     font-family: 'Noto Sans';
     text-decoration: none;
 }
-.navHamburger{
+
+.navHamburger {
     font-size: 2rem;
 }
 
-.toggleFont{
-    color: white!important;
+.toggleFont {
+    color: white !important;
     font-family: 'Noto Sans';
     text-decoration: none;
 }
-@media (max-width: 350px){
-    .xxs-none{
+
+@media (max-width: 350px) {
+    .xxs-none {
         display: none;
     }
-    .xxs-block{
-        display: block!important;
+
+    .xxs-block {
+        display: block !important;
     }
 }
-@media (max-width:230px){
-    .xxxs-none{
+
+@media (max-width:230px) {
+    .xxxs-none {
         display: none;
     }
 }
 
-@media (max-width: 992px) { 
-    .navLinkBg{
+@media (max-width: 576px) {
+    .toggleFont {
+        color: black !important;
+        font-family: 'Noto Sans';
+        text-decoration: none;
+    }
+    section header {
+        height: 100vh;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .ratio-16x10 {
+        --bs-aspect-ratio: calc(10 / 16 * 100%);
+    }
+}
+
+@media (max-width: 992px) {
+    .navLinkBg {
         background-color: white;
     }
-    .navLinkFont{
-        color: black!important;
+
+    .navLinkFont {
+        color: black !important;
         font-family: 'Noto Sans';
         text-decoration: none;
     }
 }
 
-@media (max-width: 576){
-    .toggleFont{
-        color: black!important;
-        font-family: 'Noto Sans';
-        text-decoration: none;
-    }
+
+.ratio-16x10 {
+    --bs-aspect-ratio: calc(10 / 16 * 100%);
+}
+
+.mt-7 {
+    margin-top: 4rem !important;
+}
+
+.headerStart {
+    border-radius: 999px;
+    background-color: #7D84B2;
+    color: white;
+    width: 50%;
+    font-weight: 500;
+    font-family: 'Noto Sans';
+    font-size: 22px;
+}
+
+.headningText{
+    font-size: large;
 }
 /* Media querysection according to bootstrap break points */
 /*
