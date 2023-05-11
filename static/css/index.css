@@ -28,17 +28,11 @@ section header {
     margin-right: 10x;
 }
 
-.navLinkFont {
-    color: white !important;
-    font-family: 'Noto Sans';
-    text-decoration: none;
-}
-
 .navHamburger {
     font-size: 2rem;
 }
 
-.toggleFont {
+.navFont {
     color: white !important;
     font-family: 'Noto Sans';
     text-decoration: none;
@@ -61,21 +55,27 @@ section header {
 }
 
 @media (max-width: 576px) {
-    .toggleFont {
-        color: black !important;
-        font-family: 'Noto Sans';
-        text-decoration: none;
-    }
     section header {
         height: 100vh;
         background-image: none;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .navFont {
+        color: black !important;
+        font-family: 'Noto Sans';
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 768px)
 {
+    .navLinkFont{
+        color: black !important;
+        font-family: 'Noto Sans';
+        text-decoration: none;
+    }
     .ratio-16x10 {
         --bs-aspect-ratio: calc(10 / 16 * 100%);
     }
